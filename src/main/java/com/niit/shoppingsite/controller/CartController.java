@@ -1,5 +1,3 @@
-
-
 package com.niit.shoppingsite.controller;
 
 import javax.servlet.http.HttpSession;
@@ -26,9 +24,9 @@ import com.niit.shoppingsite.model.Product;
 public class CartController {
 
 
-	@Autowired
+	 @Autowired
 	 private CartDAO cartDAO;
-	@Autowired
+	 @Autowired
 	 private CategoryDAO categoryDAO;
 	 @Autowired
 	 private ProductDAO productDAO;
@@ -60,7 +58,7 @@ public class CartController {
 	   cart2.setQuantity(1);
 	   q=cart2.getQuantity();
 	   cart2.setStatus("C");
-	  /* cart2.setUserid((int) session.getAttribute("userid"));*/
+	  
 	   cartDAO.save(cart2);
 	            return "redirect:/Cart1";
 	  }else{
@@ -68,7 +66,7 @@ public class CartController {
 	   Product product1 = productDAO.get(productid);
 	   q=cart1.getQuantity();
 	   cart1.setStatus("C");
-	   /*cart1.setUserid((int) session.getAttribute("userid"));*/
+	   
 	   p=product1.getPrice();
 	   q+=1;
 	   p=q*p;
@@ -96,7 +94,7 @@ public class CartController {
 	 }
 	 
 	 @RequestMapping("editorder/{id}")
-		public String editorder(@PathVariable("id") int id, @RequestParam("quantity") int q, HttpSession session) {
+	  public String editorder(@PathVariable("id") int id, @RequestParam("quantity") int q, HttpSession session) {
 			Cart cart = cartDAO.get(id);
 			Product p = productDAO.get(cart.getProductid());
 			cart.setQuantity(q);
@@ -108,7 +106,7 @@ public class CartController {
 	 
 		 
 	 @RequestMapping(value="/Cart1")
-	 public ModelAndView cartpage(@ModelAttribute("cart") Cart cart,HttpSession session){
+	  public ModelAndView cartpage(@ModelAttribute("cart") Cart cart,HttpSession session){
 	  ModelAndView mv= new ModelAndView("Cart1");
 	  if(cartDAO.list()==null){
 	   mv.addObject("emptycart","Sorry your shopping cart is empty");

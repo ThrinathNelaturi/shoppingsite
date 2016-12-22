@@ -68,7 +68,7 @@ public class SupplierDAOImpl implements SupplierDAO{
 
 		return listSupplier;
 	}
-/*tanuja*/
+
 }
 
 

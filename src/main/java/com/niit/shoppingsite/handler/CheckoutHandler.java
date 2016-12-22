@@ -2,8 +2,8 @@ package com.niit.shoppingsite.handler;
 
 import org.springframework.stereotype.Service;
 
-import com.niit.shoppingsite.model.Cart;
-import com.niit.shoppingsite.model.Cart1;
+import com.niit.shoppingsite.model.*;
+
 @Service
 public class CheckoutHandler {
 public String cardPayment(Cart1 cart)

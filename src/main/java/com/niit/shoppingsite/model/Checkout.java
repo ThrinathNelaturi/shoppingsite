@@ -48,4 +48,10 @@ public class Checkout {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	//public static long getSerialversionuid() {
+	//	return serialVersionUID;
+	//}
 }

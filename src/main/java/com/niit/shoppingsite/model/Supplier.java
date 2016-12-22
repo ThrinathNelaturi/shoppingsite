@@ -41,5 +41,5 @@ public class Supplier {
 	public void setProduct(String product) {
 		this.product = product;
 	}
-	/*tanuja*/
+	
 }

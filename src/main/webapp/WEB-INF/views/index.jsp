@@ -13,13 +13,222 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Shopping Web-site</title>
+<meta name="keywords" content="free website template, flower shop, website templates, CSS, HTML" />
+<meta name="description" content="Flower Shop - free website template, W3C compliant HTML CSS layout" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  /* thrinath */
   body {
-      font: 20px Montserrat, sans-serif;
+      background-image: #url("paper.gif");
+      background-color: rgba(192,192,192,0.3);
+      font: Montserrat, sans-serif;
       line-height: 1.8;
-      color:  #FF6600;
+      color: #818181;
   }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 20px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo-small-small {
+      color: yellow;
+      font-size: 25px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  
+  
+  .carousel-control.right, .carousel-control.left {      
+      dots
+      colour background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: transparent;
+  }
+  .carousel-indicators li.active {
+      background-color: transparent;
+  }
+  
+  
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;   
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e; /* navbarcolour */
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  
+  .navbar li a, .navbar .navbar-brand {
+      color: green !important;
+  }
+  
+  .navbar-nav li a:hover, .navbar-nav li.active a {    /*hover colour*/
+      color: blue !important;
+      background-color: white !important;
+  }
+  
+  .navbar-default .navbar-toggle {
+      border-color: #transparent;
+      color: #f4511e !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  /* thrinath */
+  
+  
+  
+  
+  
+  
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 {
@@ -42,55 +251,18 @@
       padding-top: 2px;
       padding-bottom: 2px;
   }
-  </style>
+ 
+
+</style>
 </head>
 <body>
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Online Shopping Website | Mr.Online</title>
-<meta name="keywords" content="free website template, flower shop, website templates, CSS, HTML" />
-<meta name="description" content="Flower Shop - free website template, W3C compliant HTML CSS layout" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
- <style>
-body  {
-   
-    background-color: #a5dada  ;
-}
-</style> 
-     
-<style>
-
-body {
-	margin: 0;
-	padding: 0;
-	line-height: 1.5em;
-	font-family: Verdana, Arial, san-serif;
-	font-size: 11px;
-	color: ;
-	background: ;
-}
-
-
-</style>
+ 
 <body>
-   <div id="templatemo_header">
-      	<h1>Welcome to  Mr.Online</h1>
-    </div>
+<div id="templatemo_header">
+      	<center><h1>E-Cart</h1></center>
+</div>
        
  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -137,11 +309,11 @@ body {
 </nav> 
     
  
-     <div id="templatemo_banner">
-     	<a href="#"><img src="C:\Users\dell1\Mronline\Shoppingsite\src\main\webapp\resources\images\bg22.jpg" alt="bg22" width="1204" height="336" title="Online Shopping SIte- Mr.online" border="0" /></a>     </div>
+     <!-- <div id="templatemo_banner">
+     	<a href="#"><img src="D:\e-commerce" alt="bg22" width="1204" height="336" title="Online Shopping SIte- Mr.online" border="0" /></a>     </div>
      
 
-    
+     -->
    
 ${errorMessage} 
 ${registerMessage}
@@ -191,19 +363,19 @@ ${registerMessage}
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="G:\Shoppingsite\src\main\webapp\resources\images\apple-laptop.jpg" alt="apple" width="360" height="345">
+        <img src="" alt="apple" width="360" height="345">
       </div>
 
       <div class="item">
-        <img src="G:\Shoppingsite\src\main\webapp\resources\images\2013-iphone5s-gold.png" alt="iphone" width="360" height="345">
+        <img src="D:\Electronics" alt="Pixel" width="360" height="345">
       </div>
     
       <div class="item">
-        <img src="G:\Shoppingsite\src\main\webapp\resources\images\7f72abfdd84fda86d9bf9890e5c44640.jpg" alt="Flower" width="360" height="345">
+        <img src="D:\img-thing" alt="Women Shoes" width="360" height="345">
       </div>
 
       <div class="item">
-        <img src="G:\Shoppingsite\src\main\webapp\resources\images\covers.jpg" alt="covers" width="360" height="345">
+        <img src="D:\toys-21-for-post" alt="Toys" width="360" height="345">
       </div>
     </div>
 
@@ -314,13 +486,8 @@ ${registerMessage}
 </c:when>
 </c:choose>
 		
-<%-- <c:choose>
-		<c:when test="${IfMakePaymentClicked}">
-			<c:import url="/WEB-INF/views/thanks.jsp">
-			</c:import>
-		</c:when>
-		</c:choose> --%>
-		<div>
+
+	<div>
 		<c:choose>
 			<c:when test="${!Administrator}">
 				<c:if test="${empty HideOthers}">
@@ -336,12 +503,12 @@ ${registerMessage}
 
 							<tr>
 
-								<td>About us<br> Mr.Online<br> Ethnico<br>
+								<td>About us<br> E-Cart<br> Ethnico<br>
 									Place of Origin<br> Blog<br>
 								</td>
 
-								<td>Watches<br> Dresses<br> Mobiles<br>
-									Accessories<br> Salwar Suits<br></td>
+								<td>Cloths<br> Dinning Tables<br> Mobiles<br>
+									Accessories<br> Jeans<br></td>
 								<td>Terms & Conditions<br> Policy for Sellers<br>
 									Policy for Buyers<br> Shipping & Refund Policies<br>
 									Wholesale Policy<br> Privacy Policy<br></td>
@@ -352,7 +519,7 @@ ${registerMessage}
 								<th>PAYMENT OPTIONS</th>
 								<th>STAY CONNECTED</th>
 							</tr>
-
+ 
 
 							<tr>
 								<td><i class="fa fa-envelope"
